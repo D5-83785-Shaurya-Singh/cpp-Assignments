@@ -143,5 +143,21 @@ int main(void)
             break;
       }
     } while (choice != 0);
+
+    for(int i = 0; i < 3; i++)
+    {
+        delete arr2[i];
+        arr2[i] = NULL;
+    }
+
+    for(int i = 0; i < n; i++)
+    {
+        delete arr4[i];
+        arr4[i] = NULL;
+    }
+
+    delete[] arr5;
+    arr5 = NULL;
+
     
 }

@@ -5,6 +5,7 @@ using namespace std;
 
 class Stack
 {
+
     int size;
     int *arr;
     int top;
@@ -70,7 +71,14 @@ class Stack
                 }
         }
 
-    
+        ~Stack()
+        {
+            delete[] arr;
+
+        }
+
+        
+  
         
 };
 
@@ -91,7 +99,6 @@ int main(void)
         s3.push(x);
     }
     s3.printStack();
-
 
     int size;
     cout << "Enter size of dynamic array: "<< endl;
@@ -166,6 +173,7 @@ int main(void)
                 break;
         }
     } while (choice != 0);
+
     return 0;
 
 }
